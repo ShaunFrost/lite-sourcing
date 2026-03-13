@@ -1,6 +1,6 @@
 backend/node_modules
 backend/dist
-backend/.env
+backend/.env.local
 
 # Logs
 frontend/logs
@@ -26,4 +26,3 @@ frontend/*.ntvs*
 frontend/*.njsproj
 frontend/*.sln
 frontend/*.sw?
-frontend/.env

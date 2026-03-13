@@ -23,6 +23,7 @@ const AddProjectModal = ({ handleClose }: AddProjectModalProps) => {
 
     const handleSave = () => {
         mutate(newProject)
+        setTimeout(handleClose, 1500)
     }
 
     const validateForm = (projectState: ProjectState) => {

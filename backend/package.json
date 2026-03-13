@@ -4,9 +4,11 @@
   "description": "backend to handle apis for lite sourcing",
   "main": "src/server.js",
   "scripts": {
+    "seed": "ts-node src/scripts/createTables.ts && ts-node src/scripts/loadSeedDataForDB.ts",
     "dev": "nodemon --watch src --ext ts --exec \"ts-node src/server.ts\"",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "local": "ts-node src/server.ts"
   },
   "author": "",
   "license": "ISC",

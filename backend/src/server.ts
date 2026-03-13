@@ -39,7 +39,7 @@ const startServer = async () => {
             port: env.PORT,
             host: env.HOST
         });
-        console.log(`Serevr running on port ${env.PORT}`);
+        console.log(`Server running on port ${env.PORT}`);
     } catch (err) {
         console.error("Error starting server", err);
     }
