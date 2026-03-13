@@ -49,6 +49,7 @@ Claude chat link: [chat](https://claude.ai/share/28aeedcf-18d3-41bd-b617-09b4225
 - Add a fallback llm spec item parsing after the regex matching.
 - I used USD as the fixed currency, I would implement a more robust price exchange system for various currencies.
 - Currently using a local llm model with 384 vector size for generating embedding. I would use a better model leveraging OpenAI key to vectorize the products.
+- While returning matching sources, I would do a cheapest and fastest product calculation.
 - Currently the indexing in Qdrant is happening synchronously when a new product is added. I would make this asynchronous by using a mediator queue system and updating the database to make sure it is in sync.
 - I haven't added indices to the main db as this is a simple application running in local. I would create indices on the database column based on retrieval patterns.
 - The UI is simple and I used this [palette](https://colorhunt.co/palette/3558727aaace9cd5fff7f8f0) to keep the design in sync. I would refactor the UI in a more user friendly way.
