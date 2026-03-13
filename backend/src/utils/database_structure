@@ -1,0 +1,33 @@
+table: suppliers
+columns:
+id (uuid) primary key
+name (supplier's name)
+country (alpha - 2)
+website (link to the supplier's website)
+created_at time of creation
+updated_at time of update
+
+table: product
+columns:
+id (uuid) primary key
+supplier_id (uuid) foreign key on id from product
+name (product name)
+category
+unit_price (floating number with 2 decimal places)
+currency (could be USD, INR and others)
+unit_of_measure (could be meter, piece and others)
+lead_time_days (number like 1, 14, 21)
+created_at time of creation
+updated_at time of update
+
+table: project
+columns:
+id (uuid) primary key
+name
+status ENUM(Draft,Sourcing,Quoted,Closed)
+created_at time of creation
+updated_at time of update
+
+
+
+CREATE DATABASE lite_sourcing;

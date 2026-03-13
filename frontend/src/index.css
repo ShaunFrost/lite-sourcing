@@ -1,0 +1,28 @@
+@import "tailwindcss";
+:root {
+  --color-primary: #355872;
+  --color-secondary: #7AAACE;
+  --color-tertiary: #9CD5FF;
+  --color-quarternary: #F7F8F0;
+  font-family: monospace;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-quarternary);
+}
+
+* {
+    box-sizing: border-box;
+    overscroll-behavior: none;
+    touch-action: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: none;
+}
