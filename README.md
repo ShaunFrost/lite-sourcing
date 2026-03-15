@@ -13,7 +13,7 @@ The backend should be running on 3000 port.
 In the repo folder, cd into the frontend folder.
 ```bash
 cd frontend
-npm run dev
+npm i && npm run dev
 ```
 The frontend should be running on 5173 port. Use http://localhost:5173 to access the frontend.
 
